@@ -1,6 +1,6 @@
-#Wordpress snippet
+# Wordpress snippet
 
-##Change logo on login form
+## Change logo on login form
 ```PHP
 function jw_change_login_logo()
 {
@@ -17,7 +17,7 @@ function jw_change_login_logo()
 add_action('login_enqueue_scripts', 'jw_change_login_logo');
 ```
 
-##Change logo link on login form
+## Change logo link on login form
 
 ```PHP
 function jw_login_url()
@@ -28,7 +28,7 @@ function jw_login_url()
 add_filter('login_headerurl', 'jw_login_url');
 ```
 
-##Change logo title on login form
+## Change logo title on login form
 ```PHP
 function mb_login_title()
 {
