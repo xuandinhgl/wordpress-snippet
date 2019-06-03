@@ -2,7 +2,7 @@
 
 ## Change logo on login form
 ```PHP
-function jw_change_login_logo()
+function change_login_logo()
 {
     ?>
     <style type="text/css">
@@ -14,26 +14,26 @@ function jw_change_login_logo()
     <?php
 }
 
-add_action('login_enqueue_scripts', 'jw_change_login_logo');
+add_action('login_enqueue_scripts', 'change_login_logo');
 ```
 
 ## Change logo link on login form
 
 ```PHP
-function jw_login_url()
+function login_url()
 {
     return home_url(); //Link to home page
 }
 
-add_filter('login_headerurl', 'jw_login_url');
+add_filter('login_headerurl', 'login_url');
 ```
 
 ## Change logo title on login form
 ```PHP
-function mb_login_title()
+function login_title()
 {
     return get_option('blogname');
 }
 
-add_filter('login_headertitle', 'mb_login_title');
+add_filter('login_headertitle', 'login_title');
 ```
